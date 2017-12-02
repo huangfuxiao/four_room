@@ -18,6 +18,8 @@ def learning_parameters():
     epsilon = 0.1 # matching Sutton's 0.1
     gamma = 0.9
     alpha = 0.3  # Sutton: 1/8 (except for hallway options and 
+    # alpha = 1./5. # Sutton: 1/8 (except for hallway options and 
+
                   # hallway goal (alpha=1/16) and hallway+primitive options 
                   # and room goal (alpha=1/4))
     return iterations, epsilon, gamma, alpha

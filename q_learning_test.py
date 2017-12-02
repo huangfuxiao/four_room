@@ -20,6 +20,7 @@ q_func       = util.QTable_Numpy(env.walkability_map.shape,num_actions) #accordi
 agent_q      = Agent_Q(env,q_func)
 # cur_state    = env.reset(random_placement=True)
 cur_state    = np.array([1, 1])
+
 #training
 max_steps  = 1000
 iterations, epsilon, gamma, alpha = util.learning_parameters()
@@ -31,6 +32,7 @@ for itr in range(iterations):
     tot_td = 0
     # cur_state = env.reset(random_placement=True)
     cur_state = np.array([1, 1])
+
     stp = 0
     rewards = []
     done = False

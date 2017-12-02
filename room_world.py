@@ -12,7 +12,9 @@ DOWN  = 3
 class RoomWorld():
     """The environment for Sutton's semi-MDP HRL.
     """
+
     def __init__(self,goal_position=[10,11]):
+
         """Map of the rooms. -1 indicates wall, 0 indicates hallway,
            positive numbers indicate numbered rooms
         """
@@ -357,8 +359,12 @@ class SmdpPlanningAgent_Q(SmdpAgent_Q):
            options) to reach the goal. The plan is followed to completion 
            without re-evaluation (for now).
         """
+<<<<<<< HEAD
         # return self.make_plan_epsilon_greedy(state,epsilon=0.)
         return self.make_plan_epsilon_greedy(state,epsilon=0.1)
+=======
+        return self.make_plan_epsilon_greedy(state,epsilon=0.)
+>>>>>>> c1d852098b810251e1c286f8544c41cf7baec372
     
     def make_plan_epsilon_greedy(self,state,epsilon=0.):
         """Takes the current (starting) state and outputs a plan (sequence of

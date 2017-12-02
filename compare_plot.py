@@ -26,6 +26,14 @@ with open('20171201-1536_training-history.pkl', 'r') as input:
 # with open('20171201-1546_training-history.pkl', 'r') as input:
 #     hist2 = pkl.load(input)
 
+
+# with open('20171127-1733_training-history.pkl', 'r') as input:
+#     hist1 = pkl.load(input)
+
+# with open('20171127-1728_training-history.pkl', 'r') as input:
+#     hist2 = pkl.load(input)
+
+
 # with open('melody_index.pckl', 'r') as input:
 #     hist3 = pkl.load(input)    
 # def test_compare_plot() :
@@ -33,7 +41,11 @@ with open('20171201-1536_training-history.pkl', 'r') as input:
 
    
 
+
 x = [i for i in range(50)]
+
+# x = [i for i in range(100)]
+
 
 # plt.plot(x, hist1[:,5], x, hist2[:,5])
 plt.plot(x, hist1[:,5])
